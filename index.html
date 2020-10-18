@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Guess-Me</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+
+  <body>
+    <header>
+      <img class="qmark-img" src="img/layout/qmark.png" />
+      <img class="logo" src="img/layout/logo.png" />
+      <img class="bubble-img" src="" style="display: none">
+      <h2>Guess Who</h2>
+    </header>
+
+    <main>
+      <section class="game-start">
+        <h2>Think of Someone...</h2>
+        <button class="btn btn-start">I'm Ready!</button>
+      </section>
+
+      <section class="quest" style="display: none">
+        <h2></h2>
+        <img src="" />
+        <button class="btn btn-yes">Yes</button>
+        <button class="btn btn-no">No</button>
+      </section>
+
+      <section class="new-quest" style="display: none">
+        <h2>OK, I gave up...</h2>
+
+        <form class="ending-form">
+          <label for="newGuess">You thought of: </label>
+          <input name="newGuess" type="txt" id="newGuess" placeholder="Your Guess" required />
+
+          <label for="add-img">Add the character's image: (optional)</label>
+          <input type="url" name="add-img" id="add-img" placeholder="Insert image url">
+
+          <label for="newQuest">Question to differentiate:</label>
+          <input name="newQuest" type="txt" id="newQuest" placeholder="The answer is YES for yours" required />
+
+          <button type="submit" class="btn btn-add-guess">Make me Smarter!</button>
+        </form>
+      </section>
+
+      <section class="new-game" style="display: none">
+        <button class="btn btn-new-game">New Game!</button>
+      </section>
+    </main>
+
+    <footer>CoffeRights &copy; 2020</footer>
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/quest-service.js"></script>
+    <script src="js/quest-controller.js"></script>
+  </body>
+</html>

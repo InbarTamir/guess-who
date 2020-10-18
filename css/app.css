@@ -1,0 +1,120 @@
+body {
+  display: flex;
+  margin: 0;
+  font-family: cursive;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: radial-gradient(circle, #b9d7ff, #9ce4ff, #8bf0f7, #98f7dd, #befabe, #d7f2ad, #ede8a3, #ffdea1, #ffcfa8, #ffc3bd, #ffbcda, #ffbef8);
+}
+
+header {
+  text-align: center;
+  color: #fcf064;
+  font-size: 2em;
+  height: 100px;
+}
+
+.qmark-img, .logo, .bubble-img {
+  margin-top: 60px;
+  height: 20vh;
+}
+
+.bubble-img {
+  position: relative;
+  top: -40px;
+  right: 20px;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: lightblue;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header h2 {
+  font-size: 1.2em;
+  margin-top: -10px;
+  text-shadow: 1px 1px 4px black;
+}
+
+.game-start {
+  position: relative;
+  top: -70px;
+}
+
+.quest {
+  padding-top: 20px;
+}
+
+.quest h2 {
+  margin: 10px auto;
+  text-shadow: 1px 1px 4px hotpink;
+}
+
+.quest img {
+  max-height: 200px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.ending-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.ending-form label{
+  font-weight: bold;
+  height: 25px;
+}
+.ending-form input {
+  margin: 10px;
+  font-size: 1em;
+  height: 40px;
+  width: 300px;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.btn-start {
+  background-color: #ffc107;
+}
+.btn-yes {
+  background-color: #28a745;
+}
+
+.btn-no {
+  background-color: #ff0018;
+}
+
+.btn-new-game {
+  background-color: #fcf064;
+  border: 4px solid hotpink;
+  color: black;
+  width: 110px;
+  height: 50px;
+}
+
+.btn-add-guess {
+  background-color: #fd7e14;
+  width: 250px;
+}
